@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,900;1,700&display=swap" rel="stylesheet">
+        <title>addToCart page</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+</head>
+<body>
+  <div class="toste-bar"></div>
+    <header>
+        <div class="nav-super-container">
+          <div class="nav-contianer">
+            <div class="nav-first-part">
+              <p>Free shipping, 30-day return or refund guarantee.</p>
+              <ul>
+                <li><a href="">SIGN IN</a></li>
+                <li><a href="">SIGN UP</a></li>
+              </ul>
+            </div>
+            <div class="nav-second-part">
+              <div class="logo"><img src="public/logo.png" alt=""></div>
+              <div class="menu">
+                <ul>
+                  <li><a href="index.html"  class="list">HOME</a></li>
+                  <li><a href="about.html"  class="list">ABOUT</a></li>
+                  <li><a href="products.html"  class="list">PRODUCTS</a></li>
+                  <li><a href="contact.html"  class="list">CONTACT</a></li>
+                </ul>
+                <a href="cartProducts.html"  class="cartPro  anker-tag">
+                  <div class="add-to-cart cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p id="cart-value">0</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <main>
+        <div class="cart-product-contianer">
+          <template class="cart-product-template">
+            <div class="cart-product" id="product1">
+              <div class="tag"><span>Computer</span></div>
+              <div class="cart-product-image">
+                <img src="public/laptop.png" alt="laptop" id="cart-product-img">
+              </div>
+              <h1 id="cart-product-name">Name</h1>
+              <p id="cart-product-price">9792739</p>
+              <div class="quantity">
+                  <button class="increment-btn">+</button>
+                  <div class="quantity-value"></div>
+                  <button class="decrement-btn">-</button>
+              </div>
+              <button class="cart-product-remove-btn">Remove</button>
+            </div>
+          </template>
+        </div>
+
+        <div class="bill">
+          <div class="calculate-bill">
+            <h2 id="offer-summary">Selected Offer Summary</h2>
+            <div class="purchase-cost">
+              <p class="para">Sub-Total:</p>
+              <p id="sub-total" class="value">$0.0</p>
+            </div>
+            <div class="purchase-tax">
+              <p class="para">Tax:</p>
+              <p id="tax-cost" class="value">$0.0</p>
+            </div>
+            <div class="total-purchase">
+              <p class="para">Final-Total:</p>
+              <p id="final-total" class="value">$0.0</p>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+          <div class="footer-main-container">
+            <div class="footer-logo-container">
+              <div class="logo"><img src="public/second-logo.png" alt=""></div>
+              <p>Welcome to Thapa EcomStore, your ultimate destination for cutting-edge gadgets!</p>
+              <img src="public/cards.png" alt="">
+            </div>
+            <div class="footer-shopping-contianer">
+              <h1>Shopping</h1>
+              <p><a href="">Computer Store</a></p>
+              <p><a href="">Laptop Store</a></p>
+              <p><a href="">Accessories</a></p>
+              <p><a href="">Sales & Discount</a></p>
+            </div>
+            <div class="footer-experience-container">
+              <h1>Experience</h1>
+              <p><a href="">Computer Store</a></p>
+              <p><a href="">Laptop Store</a></p>
+              <p><a href="">Accessories</a></p>
+              <p><a href="">Sales & Discount</a></p>
+            </div>
+            <div class="footer-newsletter-container">
+              <h1>NewsLetter</h1>
+              <p>Be the first to know about new arrivals, sales & promos!</p>
+              <input type="text" name="" id="email" placeholder="Enter email">
+            </div>
+          </div>
+          <div class="last-text">
+            <p>Design and Code by Thapa Technical</p>
+          </div>
+        </div>
+    </footer>
+    <script type="module" src="/cartProducts.js"></script>
+</body>
+</html>
